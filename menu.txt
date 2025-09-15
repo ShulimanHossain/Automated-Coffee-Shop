@@ -1,0 +1,13 @@
+Macchiato 250.00 124
+Caramel 1000.00 61
+Latte 220.00 59
+FlatWhite 120.00 54
+Americano 300.00 53
+Frappuccino 450.00 52
+Tae 30.00 50
+Irish 520.00 50
+Espresso 250.00 50
+Cappuccino 200.00 50
+hotCoffe 560.00 48
+coldcoffe 220.00 46
+Mocha 350.00 30
