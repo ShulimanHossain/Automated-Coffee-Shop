@@ -1,4 +1,3 @@
-// A project of CSE103 (ProgBuddy)
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -23,7 +22,7 @@ void passchange() {
     }
     char pass[50];
     printf("Write new pass: ");
-    fflush(stdin);//to fix an undefined behavior
+    fflush(stdin);
     gets(pass);
     int i=0;
     while(pass[i]!='\0') {
@@ -51,14 +50,14 @@ void readpass(char password[]) {
 int adminlog() {
     char enteredpass[10];
     char correctpass[10];
-// Read the correct admin password from the file
+
     readpass(correctpass);
     printf("Admin Password: ");
     int i = 0;
     while (1) {
         char ch = getch();
         if (ch == '\r' || ch == '\n') {
-            break; // Enter key = terminate the loop
+            break; 
         } else if (ch == '\b' && i >=0) {
             if(i==0) {
                 printf("*");
@@ -74,7 +73,7 @@ int adminlog() {
         }
     }
     enteredpass[i] = '\0';
-// Compare the entered password with the correct password
+
     if (strcmp(enteredpass, correctpass) == 0) {
         printf("\nAdmin login successful.\n");
         return 1;
@@ -121,7 +120,7 @@ void bubble() {
     while (fscanf(file, "%s %f %d", menu_items[count].itemname, &menu_items[count].itemprice, &menu_items[count].stock) == 3) {
         count++;
     }
-// Sort the items
+
     for (int i = 0; i < count - 1; i++) {
         for (int j = 0; j < count - i - 1; j++) {
             if (menu_items[j].stock < menu_items[j + 1].stock) {
