@@ -42,7 +42,7 @@ An efficient and user-friendly Coffee Shop Management System written in C. This 
 
 
 
-**Let me know if further edits are needed!**
+
 
 
 
